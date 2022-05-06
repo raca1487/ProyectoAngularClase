@@ -1,0 +1,33 @@
+/*Contenedor de Navegación*/
+.navbar {
+  /*font-family: "Bangers";*/
+  background: #a2b44d;
+}
+
+/*Logo del Menú de Navegación*/
+.navbar-brand {
+  position: relative;
+  margin-left: 3%;
+}
+
+/*Color y Tamaño de fuente de navBar*/
+.navbar-nav .nav-link {
+  color: #1c658c;
+  font-size: 1.2em;
+
+}
+
+/*Color de fuente de navBar HOVER*/
+.navbar-nav .nav-link:hover {
+  color: #f6d860;
+}
+
+/*Enlaces del Menú de Navegación*/
+.nav-link {
+  margin-right: 1em;
+  transition: all 0.3s linear;
+  border-radius: 5px;
+}
+.nav-link:hover {
+  background-color: #1c658c;
+}

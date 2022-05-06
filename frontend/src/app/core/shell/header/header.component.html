@@ -1,12 +1,12 @@
-<!-- Header fijo para toda la app -->
+<!-- Header, con barra de navegación, fijo para toda la app -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg">
   <!--Logo de la barra de navegación-->
-  <a class="navbar-brand" href="index.html">
+  <a class="navbar-brand" routerLink="/">
     <img
-      src="./img/logo_trex.png"
+      src="./assets/logo_trex.png"
       alt="Logo TREX"
-      width="220px"
+      width="250px"
       height="auto"
     />
   </a>
@@ -25,18 +25,17 @@
 
   <!--Botones de la barra de navegación-->
   <div class="navbar-collapse" id="navbarSupportedContent">
+    <!--ml-auto se consigue alineacion de items a la derecha-->
     <ul class="navbar-nav ml-auto">
-      <!--ml-auto se consigue alineacion de items a la derecha-->
+
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link" routerLink="/">Inicio</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="experiences.html">Experiencias</a>
+        <a class="nav-link" routerLink="/">Experiencias</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="guides.html">Guías</a>
-      </li>
+
       <li class="nav-item dropdown">
         <a
           class="nav-link dropdown-toggle"
@@ -47,20 +46,20 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Community
+          Community TREX
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a
             class="dropdown-item nav-link"
-            href="workwithus.html"
+            routerLink="/"
             target="_blank"
             >Trabaja con nosotros</a
           >
-          <a class="dropdown-item nav-link disabled" href="#">Foro</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item nav-link" href="contact.html">Contacto</a>
+          <a class="dropdown-item nav-link" routerLink="/">Contacto</a>
         </div>
       </li>
+
       <li class="nav-item">
         <a
           class="nav-link"
@@ -69,6 +68,7 @@
           >Info COVID-19</a
         >
       </li>
+
     </ul>
   </div>
 </nav>
