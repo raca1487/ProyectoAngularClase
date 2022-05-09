@@ -1,6 +1,6 @@
 <!-- Header, con barra de navegación, fijo para toda la app -->
 
-<nav class="navbar fixed-top navbar-expand-lg">
+<nav class="navbar fixed-top">
   <!--Logo de la barra de navegación-->
   <a class="navbar-brand" routerLink="/">
     <img
@@ -10,65 +10,26 @@
       height="auto"
     />
   </a>
+
   <!--Botón de la barra de navegación responsive-->
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="hamburger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
 
   <!--Botones de la barra de navegación-->
-  <div class="navbar-collapse" id="navbarSupportedContent">
-    <!--ml-auto se consigue alineacion de items a la derecha-->
-    <ul class="navbar-nav ml-auto">
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/">Inicio</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/">Experiencias</a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Community TREX
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a
-            class="dropdown-item nav-link"
-            routerLink="/"
-            target="_blank"
-            >Trabaja con nosotros</a
-          >
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item nav-link" routerLink="/">Contacto</a>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://www.sanidad.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/home.htm"
-          target="_blank"
-          >Info COVID-19</a
-        >
-      </li>
-
-    </ul>
+  <div class="nav-link hide">
+    <a routerLink="/">Inicio</a>
+    <a routerLink="experiences">Experiencias</a>
+    <a routerLink="#">Community Trex
+      <a routerLink="#">Trabaja con nosotros</a>
+      <a routerLink="#">Contacto</a>
+    </a>
+    <a
+      href="https://www.sanidad.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/home.htm"
+      target="_blank">
+      Info COVID-19
+    </a>
   </div>
 </nav>
