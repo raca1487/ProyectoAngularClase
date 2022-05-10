@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExperiencesComponent } from './experiences/experiences.component';
-import { TravelComponent } from './experiences/travel/travel.component';
+import { ViajeComponent } from './viajes/viaje/viaje.component';
+import { ViajesComponent } from './viajes/viajes.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ExperiencesComponent,
-    children: [
-      {
-        path:'travel',
-        component: TravelComponent
-      }
-    ]
+    component: ExperiencesComponent
+  },
+  {
+    path: 'viajes',
+    component: ViajesComponent
+  },
+  {
+    path: 'viaje',
+    component: ViajeComponent
   }
 ];
 

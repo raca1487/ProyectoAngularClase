@@ -1,0 +1,33 @@
+.travel-title {
+  background-image: url("../img/banner_playa.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.banner-travel {
+  position: absolute;
+  top: 55%;
+  margin-left: 15%;
+}
+
+.banner-travel h1 {
+  font-family: "Permanent Marker";
+  color: var(--color-dark);
+}
+
+.travel-description {
+  margin-top: 3%;
+}
+
+.banner-price {
+  background-color: var(--color-light);
+  border-width: 2px;
+  border-style: ridge;
+  border-radius: 15px;
+}
+
+.description-price-content {
+  margin: 5% 0;
+}
